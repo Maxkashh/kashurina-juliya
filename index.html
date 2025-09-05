@@ -162,7 +162,7 @@
             font-weight: 500;
         }
 
-      
+   
 .social-button.highlight {
     background: linear-gradient(135deg, #ff9d6c, #e63946);
     color: white;
@@ -196,6 +196,58 @@
 }
 
 .social-button.highlight .social-detail {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.social-button .airplane-icon {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+.social-button.lfk {
+    background: linear-gradient(135deg, #99bbdb, #2843d6);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 25px rgba(3, 30, 119, 0.3);
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.social-button .airplane-icon {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.social-button.lfk:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(3, 31, 122, 0.4);
+}
+
+.social-button.lfk .social-icon {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.social-button.lfk:hover .airplane-icon {
+    transform: translateX(3px) rotate(5deg);
+    transition: transform 0.4s ease;
+}
+
+/* Улучшаем текст */
+.social-button.lfk .social-name {
+    color: white;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.social-button.lfk .social-detail {
     font-size: 14px;
     opacity: 0.95;
 }
@@ -321,18 +373,18 @@
 
         <div class="social-container">
             <a href="https://t.me/chinafitnes" class="social-button airplane highlight" target="_blank">
-                <!-- <div class="social-icon">
-                    <svg class="airplane-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
-                        fill="white">
-                        <path
-                            d="M2.3 12.1c-.1-.2-.1-.4 0-.6l4-9c.1-.3.4-.5.7-.5.1 0 .3 0 .4.1l3.1 2.1c.3.2.4.6.3.9l-1.1 3.7c0 .2.1.5.3.6l2.6 2.2c.2.2.3.4.3.7 0 .3-.1.5-.3.7l-2.6 2.2c-.2.2-.4.3-.6.3l-3.7-1.1c-.3-.1-.6-.1-.8.1l-2.1 3.1c-.1.2-.3.3-.5.3-.1 0-.3 0-.4-.1l-2.5-1.1c-.2-.1-.4-.3-.5-.5-.1-.2-.1-.4 0-.6l1.9-2.7z" />
-                    </svg>
-                </div> -->
+                
                 <div class="social-text">
                     <div class="social-name">✈️ Фитнес тур в Китай</div>
                     
                 </div>
-                <i class="fas fa-paper-plane" style="color: rgba(255,255,255,0.8); margin-left: 10px;"></i>
+                <i class="fas fa-paper-plane airplane-icon" style="color: rgba(255,255,255,0.8); margin-left: 10px;"></i>
+            </a>
+            <a href="https://t.me/laboratoriytelalfk" class="social-button airplane lfk" target="_blank">
+                <div class="social-text">
+                    <div class="social-name">👦👧 ЛФК для детей</div>
+                </div>
+                <i class="fas fa-paper-plane airplane-icon" style="color: rgba(255,255,255,0.8); margin-left: 10px;"></i>
             </a>
             <a href="https://vk.com/laboratoriytela" class="social-button vk" target="_blank">
                 <div class="social-icon"><i class="fab fa-vk"></i></div>
